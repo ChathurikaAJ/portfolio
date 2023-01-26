@@ -1,0 +1,41 @@
+.home {
+    display: flex;
+    height: 100vh;
+   
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem;
+        &-left{
+            width: 60%;
+        }
+    }
+    
+    &__title{
+        font-size: 150px;
+        font-weight: 300;
+    }
+
+    &__text{
+        width: 80%;
+    }
+
+    &__highlight{
+        color: #FB2576;
+    }
+
+    &__subtitles{
+        color: white;
+        font-size: 30px;
+        padding-left: 1rem;
+        width: fit-content;
+        margin-bottom: 0.25rem;
+        font-weight: 100;
+        &:hover{
+            cursor: pointer;
+            border-left: solid 1px #FB2576;
+            
+        }
+    }
+}
