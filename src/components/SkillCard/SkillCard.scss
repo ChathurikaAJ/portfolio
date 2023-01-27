@@ -1,0 +1,29 @@
+
+.skills__card {
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  color: #FB2576;
+  font-family: Neucha, sans-serif;
+  outline: none;
+  padding: .75rem;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  margin-bottom: 1rem;
+
+    &:nth-child(2) {
+      margin-left: 40px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+}
+
+
+
+
