@@ -15,9 +15,15 @@ a, link {
     
 }
 
+
 body {
     background-color: #182747;
     color: white;
     font-family: "Montserrat";
-    font-size: 400;   
+    font-size: 400; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

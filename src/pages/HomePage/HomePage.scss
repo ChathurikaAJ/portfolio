@@ -1,6 +1,11 @@
 .home {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    
+    &__content{
+        display: flex;
+        height: 93.5vh;
+    }
    
     &__container {
         display: flex;
@@ -10,6 +15,14 @@
         &-left{
             width: 60%;
         }
+        // &-right{
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: center;
+        //     position: absolute;
+        //     top: -40px;
+        //     right: 30px;
+        // }
     }
     
     &__title{
@@ -25,17 +38,23 @@
         color: #FB2576;
     }
 
-    &__subtitles{
-        color: white;
-        font-size: 30px;
-        padding-left: 1rem;
-        width: fit-content;
-        margin-bottom: 0.25rem;
-        font-weight: 100;
-        &:hover{
-            cursor: pointer;
-            border-left: solid 1px #FB2576;
-            
-        }
+    &__top{
+        width: 30%;
+        border-top: 5px solid white;
+        justify-self: flex-start;
+        margin-top: 1rem;
+        opacity: 60%;
     }
+
+    &__bottom{
+        width: 30%;
+        border-top: 5px solid white;
+        align-self: flex-end;
+        opacity: 60%;
+    }
+
+    
+
+
 }
+

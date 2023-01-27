@@ -1,0 +1,30 @@
+.contact{
+
+    &__container {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        margin-top: 1rem;
+        margin-left: 4rem;
+    }
+
+    &__title{
+        font-size: 70px;
+        font-weight: 300;
+    }
+    
+    &__icons {
+        width: 70px;
+        height: 70px;
+        &:hover{
+            cursor: pointer;
+            filter: invert(37%) sepia(99%) saturate(4572%) hue-rotate(321deg) brightness(97%) contrast(103%);
+        }
+
+        &-size{
+            width: 50px;
+            height: 50px;
+            align-self: center;
+        }
+    }
+}
