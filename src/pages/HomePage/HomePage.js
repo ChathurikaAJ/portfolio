@@ -1,11 +1,14 @@
 import "./HomePage.scss"
 import Nav from "../../components/Nav/Nav"
+import logo from "../../assets/images/logo.png"
+import { Link } from "react-router-dom"
 
 
 export default function HomePage() {
     return (
         <div className="page">
-            <div className="page__top"></div>
+            <div className="page__top"><div className="page__top-left"></div><div className="page__top-right"></div></div>
+            <Link to="/"><p className="page__logo">C</p></Link>
             <div className="page__content">
                 <div className="page__container page__container-left">
                     <h1 className="page__title">Hello<span className="page__highlight">.</span></h1>

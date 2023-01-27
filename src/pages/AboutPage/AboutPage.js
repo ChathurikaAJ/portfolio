@@ -1,10 +1,12 @@
 import "./AboutPage.scss"
 import Nav from "../../components/Nav/Nav"
+import { Link } from "react-router-dom"
 
 export default function AboutPage() {
     return (
         <div className="page">
-            <div className="page__top"></div>
+            <div className="page__top"><div className="page__top-left"></div><div className="page__top-right"></div></div>
+            <Link to="/"><p className="page__logo">C</p></Link>
             <div className="page__content">
                 <div className="page__container page__container-left">
                     <p className="page__subtitle">About Me<span className="page__highlight">.</span></p>

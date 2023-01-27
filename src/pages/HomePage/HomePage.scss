@@ -1,6 +1,16 @@
 .page {
     display: flex;
     flex-direction: column;
+
+    &__logo{
+        position: absolute;
+        top: -5px;
+        left: 55px;
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+        text-shadow: -1px -1px 0 #FB2576
+    }
     
     &__content{
         display: flex;
@@ -39,10 +49,26 @@
 
     &__top{
         width: 30%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    &__top-left{
+        width: 12%;
         border-top: 5px solid white;
         justify-self: flex-start;
         margin-top: 1rem;
         opacity: 60%;
+      
+    }
+
+    &__top-right{
+        width: 76%;
+        border-top: 5px solid white;
+        justify-self: flex-start;
+        margin-top: 1rem;
+        opacity: 60%;
+        
     }
 
     &__bottom{
