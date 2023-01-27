@@ -6,11 +6,11 @@ import Nav from "../../components/Nav/Nav"
 
 export default function ContactPage() {
     return (
-        <div className="home">
-            <div className="home__top"></div>
-            <div className="home__content">
-                <div className="home__container home__container-left">
-                    <p className="contact__title">Get In Touch<span className="home__highlight">.</span></p>
+        <div className="page">
+            <div className="page__top"></div>
+            <div className="page__content">
+                <div className="page__container page__container-left">
+                    <p className="page__subtitle">Get In Touch<span className="page__highlight">.</span></p>
                     <div className="contact__container">
                         <img className="contact__icons" src={github} alt="GitHub"></img>
                         <img className="contact__icons contact__icons-size" src={linkedin} alt="LinkedIn"></img>
@@ -19,7 +19,7 @@ export default function ContactPage() {
                 </div>
                 <Nav />
             </div>
-            <div className="home__bottom"></div>
+            <div className="page__bottom"></div>
         </div>
     )
 }

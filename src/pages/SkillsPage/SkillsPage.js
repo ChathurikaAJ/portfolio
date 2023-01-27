@@ -7,11 +7,11 @@ export default function SkillsPage() {
     const skillslist = ["HTML","JavaScript","CSS","Sass","ReactJS","NodeJS","ExpressJS","MySQL"]
 
     return (
-        <div className="home">
-            <div className="home__top"></div>
-            <div className="home__content">
-                <div className="home__container home__container-left">
-                    <p className="contact__title">Techincal Skills<span className="home__highlight">.</span></p>
+        <div className="page">
+            <div className="page__top"></div>
+            <div className="page__content">
+                <div className="page__container page__container-left">
+                    <p className="page__subtitle">Techincal Skills<span className="page__highlight">.</span></p>
                     <div className="skills__container">
                         {skillslist.map((skill)=>(
                         <SkillCard skill={skill}/>
@@ -19,7 +19,7 @@ export default function SkillsPage() {
                 </div>
                 <Nav/>
             </div>
-            <div className="home__bottom"></div>
+            <div className="page__bottom"></div>
         </div>
     )
 }
