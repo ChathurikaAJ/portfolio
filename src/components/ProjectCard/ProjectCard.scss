@@ -1,0 +1,79 @@
+.projectcard{
+    &__title{
+        font-weight: 300;
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+    &__image {
+        width: 55%;
+        border-radius: 6px;
+    }
+    &__container{
+        display: flex;
+         
+    }
+    &__links{
+        width: fit-content;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link{
+        &:hover{
+            cursor: pointer;
+            color: #FB2576;
+        }
+    }
+    &__details{
+        display: flex;   
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2rem;
+    }
+
+    &__next{
+        display: flex;
+        align-items: center;
+        &-image{
+            width: 20px;
+            filter: invert(37%) sepia(99%) saturate(4572%) hue-rotate(321deg) brightness(97%) contrast(103%);
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__video{
+        width: 700px;
+    }
+}
+
+.ReactModal__Body--open,
+.ReactModal__Html--open {
+  overflow: hidden;
+}
+
+.modal {
+    // width: 100vw;
+    // height: 100vh;
+    top: 50%;
+    left: 30%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    position: absolute;
+
+  
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.676); 
+}

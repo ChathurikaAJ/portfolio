@@ -7,6 +7,9 @@
 
     &__activelink{
         border-left: solid 1px #FB2576;
+        &:hover{
+            border: none;
+        }
    }
 
    &__titles{
