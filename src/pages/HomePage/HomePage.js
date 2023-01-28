@@ -1,6 +1,5 @@
 import "./HomePage.scss"
 import Nav from "../../components/Nav/Nav"
-import logo from "../../assets/images/logo.png"
 import { Link } from "react-router-dom"
 
 
