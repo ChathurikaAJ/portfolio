@@ -28,7 +28,7 @@ export default function ProjectCard() {
                     <p className="projectcard__info">A pronunciation assessment app to assist users in thier language
                         learning journey. Available in four languages.</p>
                     <div className="projectcard__links">
-                        <p className="projectcard__link">Github</p>
+                    <a href="https://github.com/ChathurikaAJ/chathurika-jayakody-pronounce" target="_blank" rel="noreferrer"><p className="projectcard__link">Github</p></a>
                         <p className="projectcard__link" onClick={openModal}>Demo</p>
                     </div>
                 </div>
