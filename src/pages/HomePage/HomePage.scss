@@ -5,35 +5,29 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-
+    max-height: 720px;
+    
     &__logo{
-        position: absolute;
-        top: -5px;
-        left: 16px;
+        margin-top: -5px;
         color: white;
         font-weight: 700;
         font-size: 40px;
         text-shadow: -1px -1px 0 #FB2576;
-
-        @include tablet{
-            position: fixed;
-            top: -5px;
-            left: 55px;
-        }
     }
     
     &__content{
         max-width: 100vw;
         padding: 25px;
         height: 100vh;
-        @include tablet{
+
+        @include desktop{
             display: flex;
             height: 93.5vh;
         }
     }
    
     &__container {
-        @include tablet{
+        @include desktop{
             padding: 3rem;
             width: 100%;
             display: flex;
@@ -63,11 +57,17 @@
         margin-top: 2rem;
 
         @include tablet{
+            font-size: 50px;
+            margin-top: 3rem;
+        } 
+
+        @include desktop{
             font-size: 70px;
-            position: fixed;
-            top: 200px;
+            // position: fixed;
+            // top: 200px;
             margin-top: 0;
         } 
+
     }
 
     &__text{
@@ -111,20 +111,28 @@
         justify-self: flex-start;
         margin-top: 1rem;
         opacity: 60%;
+
         @include tablet{
+            width: 70%;
+        }
+        
+        @include desktop{
             width: 76%;
         }
+        
     }
 
     &__bottom{
-        width: 150px;
-        border-top: 5px solid white;
-        align-self: flex-end;
-        opacity: 60%;
-        margin-bottom: 20px;
+        display: none;
+
         @include tablet{
-            width: 30%;
+            display: block;
             margin-bottom: 0;
+            width: 300px;
+            border-top: 5px solid white;
+            align-self: flex-end;
+            opacity: 60%;
+            margin-bottom: 20px;
         }
     }
 }

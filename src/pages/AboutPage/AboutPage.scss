@@ -2,8 +2,10 @@
 
 .aboutpage-text {
     margin-top: 1.5rem;
-    @include tablet {
-        margin-top: 13rem;
+    margin-bottom: 3rem;
+
+    @include desktop{
+        margin-bottom: 0;
     }
     
 }
