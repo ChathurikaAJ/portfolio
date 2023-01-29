@@ -1,3 +1,9 @@
+@use "../../styles/partials/global" as *;
+
 .aboutpage-text {
-    margin-top: 9.5rem;
+    margin-top: 1.5rem;
+    @include tablet {
+        margin-top: 13rem;
+    }
+    
 }

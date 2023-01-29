@@ -1,9 +1,15 @@
+@use "../../styles/partials/global" as *;
+
 .nav {
 
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 3rem;
+
+    @include tablet{
+        padding: 3rem;
+    }
+    
 
     &__activelink{
         border-left: solid 1px #FB2576;
@@ -14,10 +20,15 @@
 
    &__titles{
     color: white;
-    font-size: 30px;
-    padding-left: 1rem;
+    font-size: 20px;
     margin-bottom: 0.25rem;
     font-weight: 100;
+    padding-left: 1rem;
+    @include tablet{
+        
+        font-size: 30px;
+    }
+
     &:hover{
         cursor: pointer;
         border-left: solid 1px #FB2576;

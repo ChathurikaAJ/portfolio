@@ -1,13 +1,18 @@
+@use "../../styles/partials/global" as *;
+
 .skills {
     &__container{
-        width: 500px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 9rem;
-        margin-left: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
 
-        
+        @include tablet{
+            width: 500px;
+            margin-top: 9rem;
+            margin-left: 1rem;
+        } 
     }
 }
 

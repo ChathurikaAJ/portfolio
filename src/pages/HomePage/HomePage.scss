@@ -1,46 +1,83 @@
+@use "../../styles/partials/global" as *;
+
+
 .page {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
     &__logo{
         position: absolute;
         top: -5px;
-        left: 55px;
+        left: 16px;
         color: white;
         font-weight: 700;
         font-size: 40px;
-        text-shadow: -1px -1px 0 #FB2576
+        text-shadow: -1px -1px 0 #FB2576;
+
+        @include tablet{
+            position: fixed;
+            top: -5px;
+            left: 55px;
+        }
     }
     
     &__content{
-        display: flex;
-        height: 93.5vh;
+        max-width: 100vw;
+        padding: 25px;
+        height: 100vh;
+        @include tablet{
+            display: flex;
+            height: 93.5vh;
+        }
     }
    
     &__container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 3rem;
-        &-left{
-            width: 60%;
+        @include tablet{
+            padding: 3rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            &-left{
+                width: 60%;
+            }
         }
     }
     
     &__title{
-        font-size: 150px;
+        font-size: 80px;
         font-weight: 300;
+        margin-top: 2rem;
+
+        @include tablet{
+            font-size: 150px;
+            margin-top: 0;
+        }
     }
 
     &__subtitle{
-        font-size: 70px;
+        font-size: 30px;
         font-weight: 300;
-        position: fixed;
-        top: 200px;
+        margin-top: 2rem;
+
+        @include tablet{
+            font-size: 70px;
+            position: fixed;
+            top: 200px;
+            margin-top: 0;
+        } 
     }
 
     &__text{
-        width: 80%;
+        margin-bottom: 2rem;
+        font-size: 15px;
+        @include tablet{
+            width: 80%;
+            margin-bottom: 0;
+            font-size: inherit;
+        }
     }
 
     &__highlight{
@@ -48,34 +85,47 @@
     }
 
     &__top{
-        width: 30%;
+        width: 150px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        @include tablet{
+            width: 30%;
+        }
     }
+
     &__top-left{
-        width: 12%;
+        width: 10px;
         border-top: 5px solid white;
         justify-self: flex-start;
         margin-top: 1rem;
         opacity: 60%;
-      
+        @include tablet{
+            width: 12%;
+        }
     }
 
     &__top-right{
-        width: 76%;
+        width: 100px;
         border-top: 5px solid white;
         justify-self: flex-start;
         margin-top: 1rem;
         opacity: 60%;
-        
+        @include tablet{
+            width: 76%;
+        }
     }
 
     &__bottom{
-        width: 30%;
+        width: 150px;
         border-top: 5px solid white;
         align-self: flex-end;
         opacity: 60%;
+        margin-bottom: 20px;
+        @include tablet{
+            width: 30%;
+            margin-bottom: 0;
+        }
     }
 }
 
