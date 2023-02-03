@@ -16,7 +16,7 @@ export default function HomePage() {
                 <div className="page__container page__container-left">
                     <h1 className="page__title">Hello<span className="page__highlight">.</span></h1>
                     <p className="page__text">My name is Chathurika Jayakody. I'm a Junior Front-End Developer based in Toronto, Canada.
-                        I recently started exploring the field of web development and <span className="page__highlight">love</span> creating simple and beautiful Web Applications.</p>
+                        I recently started exploring the field of web development and <span className="page__highlight">love</span> creating simple and beautiful web applications.</p>
                 </div>
                 <Nav />
 
