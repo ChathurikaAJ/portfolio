@@ -13,7 +13,7 @@ export default function AboutPage() {
             <div className="page__content">
                 <div className="page__container page__container-left">
                     <p className="page__subtitle">About Me<span className="page__highlight">.</span></p>
-                    <p className="page__text aboutpage-text">Hi! My name is Chathurika. I'm a Full-Stack Developer based in Toronto, 
+                    <p className="page__text aboutpage-text">Hi! My name is Chathurika. I'm a Front-End Developer based in Toronto, 
                     Canada.
                         <br />
                         <br />
