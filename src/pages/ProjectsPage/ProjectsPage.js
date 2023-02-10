@@ -1,7 +1,12 @@
 import "./ProjectsPage.scss";
 import Nav from "../../components/Nav/Nav"
 import { Link } from "react-router-dom"
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ProjectCard1 from "../../components/ProjectCard/ProjectCard1";
+import ProjectCard2 from "../../components/ProjectCard/ProjectCard2";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
 export default function ProjectsPage() {
     return (
@@ -13,7 +18,10 @@ export default function ProjectsPage() {
             </div>
             <div className="page__content">
                 <div className="page__container page__container-left">
-                    <ProjectCard />
+                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    <SwiperSlide>{<ProjectCard1/>}</SwiperSlide>
+                    <SwiperSlide>{<ProjectCard2 />}</SwiperSlide>
+                </Swiper>
                 </div>
                 <Nav />
 

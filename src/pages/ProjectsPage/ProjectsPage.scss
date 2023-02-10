@@ -1,3 +1,36 @@
+@use "../../styles/partials/global" as *;
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.swiper-button-prev, .swiper-button-next {
+    color: #FB2576 !important;
+
+  
+}
+
+:root {
+    --swiper-navigation-size: 20px !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: var(--swiper-navigation-top-offset,35%) !important;
+  @include tablet {
+    top: var(--swiper-navigation-top-offset,50%) !important;
+  }
+  
+}
 
 
 

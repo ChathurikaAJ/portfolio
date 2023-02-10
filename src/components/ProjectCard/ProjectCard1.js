@@ -5,7 +5,7 @@ import demo from "../../assets/videos/demo.mp4"
 import Modal from 'react-modal'
 import { useState } from "react"
 
-export default function ProjectCard() {
+export default function ProjectCard1() {
     const [modalIsOpen, setIsOpen] = useState(false)
 
 
@@ -25,17 +25,13 @@ export default function ProjectCard() {
             <div className="projectcard__container">
                 <img className="projectcard__image" src={pronounce} alt="Pronounce"></img>
                 <div className="projectcard__details">
-                    <p className="projectcard__info">A pronunciation assessment app to assist users in thier language
+                    <p className="projectcard__info">A pronunciation assessment app to assist users in their language
                         learning journey. Available in four languages.</p>
                     <div className="projectcard__links">
                     <a href="https://github.com/ChathurikaAJ/chathurika-jayakody-pronounce" target="_blank" rel="noreferrer"><p className="projectcard__link">Github</p></a>
                         <p className="projectcard__link" onClick={openModal}>Demo</p>
                     </div>
                 </div>
-                <div className="projectcard__next">
-                    {/* <img className="projectcard__next-image" src={next} alt="next"></img> */}
-                </div>
-
             </div>
            
 
