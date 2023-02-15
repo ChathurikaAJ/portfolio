@@ -107,10 +107,20 @@
 
     &__top-right{
         width: 100px;
-        border-top: 5px solid white;
+        border-top: 5px solid  white;
         justify-self: flex-start;
         margin-top: 1rem;
         opacity: 60%;
+  
+     
+  
+
+  animation: bg-spin 3s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
 
         @include tablet{
             width: 70%;
@@ -136,4 +146,11 @@
         }
     }
 }
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
 
