@@ -13,6 +13,10 @@
         font-weight: 700;
         font-size: 40px;
         text-shadow: -1px -1px 0 #FB2576;
+
+        @include desktop{
+            margin-top: 1px;
+        }
     }
     
     &__content{
@@ -20,34 +24,45 @@
         padding: 25px;
         height: 100vh;
 
-        @include desktop{
+        @include tablet{
             display: flex;
             height: 93.5vh;
+
         }
     }
    
     &__container {
-        @include desktop{
-            padding: 3rem;
+        @include tablet{
+            padding: 15vh 2rem;
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: column;
 
             &-left{
                 width: 60%;
             }
         }
+
+        @include desktop{
+            padding: 7rem 3rem;
+        }
     }
     
     &__title{
+        font-family: 'Montserrat';
         font-size: 80px;
         font-weight: 300;
         margin-top: 2rem;
+        margin-bottom: 1rem;
 
         @include tablet{
+            font-size: 120px;
+            margin: 0;
+        }
+
+        @include desktop{
             font-size: 150px;
-            margin-top: 0;
         }
     }
 
@@ -74,7 +89,7 @@
         margin-bottom: 2rem;
         font-size: 15px;
         @include tablet{
-            width: 80%;
+            width: 100%;
             margin-bottom: 0;
             font-size: inherit;
         }
@@ -89,6 +104,7 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        margin-top: 0.5rem;
         @include tablet{
             width: 30%;
         }
@@ -135,7 +151,7 @@
     &__bottom{
         display: none;
 
-        @include tablet{
+        @include desktop{
             display: block;
             margin-bottom: 0;
             width: 300px;
