@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: column;
 
-    @include desktop{
+    @include tablet{
         padding: 3rem;
     }
     

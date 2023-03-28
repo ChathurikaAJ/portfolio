@@ -21,16 +21,18 @@ a, link {
 body {
     background-color: #182747;
     color: white;
-    font-family: "Montserrat";
-    font-size: 400; 
+    font-family: "Roboto";
+    font-weight: 300; 
+    font-size: 18px;
     max-width: 1280px;
     margin: 0 auto;
+    
 
     @include desktop{
-        margin-top: calc(15.625vw - 200px)
+        margin-top: calc(15.625vw - 200px);
+        font-size: 20px;
+        line-height: 1.8em;
     }
-
-
 
 }
 
