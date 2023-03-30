@@ -32,5 +32,11 @@
   
 }
 
+.project__container{
+  @include tablet{
+    height: auto;
+  }
+}
+
 
 

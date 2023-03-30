@@ -17,7 +17,7 @@ export default function ProjectsPage() {
                 <div className="page__top-right"></div>
             </div>
             <div className="page__content">
-                <div className="page__container page__container-left">
+                <div className="page__container page__container-left project__container">
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                     <SwiperSlide>{<ProjectCard1/>}</SwiperSlide>
                     <SwiperSlide>{<ProjectCard2 />}</SwiperSlide>
