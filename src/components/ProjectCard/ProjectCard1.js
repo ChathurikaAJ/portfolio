@@ -1,23 +1,15 @@
 import "./ProjectCard.scss"
 import pronounce from "../../assets/images/pronounce.PNG"
-import next from "../../assets/icons/next.png"
 import demo from "../../assets/videos/demo.mp4"
-import Modal from 'react-modal'
+import Modal from 'react-bootstrap/Modal';
 import { useState } from "react"
 
 export default function ProjectCard1() {
-    const [modalIsOpen, setIsOpen] = useState(false)
 
+    const [show, setShow] = useState(false);
 
-    function openModal() {
-        setIsOpen(true);
-    }
-
-    function closeModal() {
-        setIsOpen(false);
-    }
-
-    Modal.setAppElement(".App");
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <div className="projectcard">
@@ -25,25 +17,17 @@ export default function ProjectCard1() {
             <div className="projectcard__container">
                 <img className="projectcard__image" src={pronounce} alt="Pronounce"></img>
                 <div className="projectcard__details">
-                    <p className="projectcard__info">A pronunciation assessment app to assist users in their language
+                    <p className="projectcard__info">React Project - A pronunciation assessment app to assist users in their language
                         learning journey. Available in four languages.</p>
                     <div className="projectcard__links">
                     <a href="https://github.com/ChathurikaAJ/chathurika-jayakody-pronounce" target="_blank" rel="noreferrer"><p className="projectcard__link">Github</p></a>
-                        <p className="projectcard__link" onClick={openModal}>Demo</p>
+                        <p className="projectcard__link" onClick={handleShow} >Demo</p>
                     </div>
                 </div>
             </div>
            
-
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                className="modal"
-                overlayClassName="modal-overlay"
-                shouldCloseOnOverlayClick={true}
-                ariaHideApp={false}
-            >
-                 <video controls className="projectcard__video">
+            <Modal show={show} onHide={handleClose} className="modal" >
+                <video controls className="projectcard__video">
                     <source src={demo} type="video/mp4" />
                 </video>
             </Modal>
