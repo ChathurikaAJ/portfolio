@@ -2,11 +2,13 @@
 
 .skills {
     &__container{
+        height: 420px;
+    }
+    &__cardbox{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 3rem;
-        margin-bottom: 2rem;
         width: 250px;
         
 
