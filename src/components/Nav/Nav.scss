@@ -9,6 +9,11 @@
     @include tablet{
         padding: 3rem;
     }
+
+    @include desktop{
+        margin-left: 13.5rem;
+        padding-left: 0;
+    }
     
 
     &__activelink{
