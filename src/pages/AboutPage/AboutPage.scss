@@ -5,24 +5,19 @@
     margin-bottom: 3rem;
 
     @include tablet{
+        margin-top: 3rem;
         margin-bottom: 0;
         font-size: 18px;
-        line-height: 1.5em;
+        line-height: 1.8em;
     }
     
 }
 
 .aboutpage-container{
     @include tablet{
-        padding:0 2rem;
+        height: 450px;
     }
 
-    @include desktop{
-        padding: 4rem 2rem;
-    }
 }
 
-.aboutpage-title{
-    margin-top: 0;
-}
 
