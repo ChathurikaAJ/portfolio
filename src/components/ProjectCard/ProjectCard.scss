@@ -43,6 +43,10 @@
             margin-top: 0;
             align-self: center;
         }
+
+        &-project3{
+            width: auto;
+        }
     }
 
     &__link{
@@ -64,7 +68,7 @@
         
 
         @include desktop{
-            margin-left: 2rem;
+            // margin-left: 2rem;
             margin-top: 1rem;
             margin-bottom: 0;
             // padding: 0 6rem;

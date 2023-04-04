@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import ProjectCard3 from "../../components/ProjectCard/ProjectCard3";
 
 export default function ProjectsPage() {
     return (
@@ -19,6 +20,7 @@ export default function ProjectsPage() {
             <div className="page__content">
                 <div className="page__container page__container-left project__container">
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    <SwiperSlide>{<ProjectCard3 />}</SwiperSlide>
                     <SwiperSlide>{<ProjectCard1/>}</SwiperSlide>
                     <SwiperSlide>{<ProjectCard2 />}</SwiperSlide>
                 </Swiper>
